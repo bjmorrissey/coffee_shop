@@ -25,7 +25,7 @@ navObserver.observe(sectionOne)
 navButton.addEventListener('click', e => {
   e.preventDefault();
   navLinks.classList.toggle('active')
-  // nav.classList.toggle('sticky')
+ 
 })
 
 
@@ -68,12 +68,6 @@ const validateEmail = (input, rqMsg, invalidMsg) => {
   return true
 }
 
-// const validateMessage = (message) => {
-//   if (message.length < 5) {
-//     return false
-//   }
-//   return true;
-// }
 
 const nameRequired = "Please enter your name"
 const emailRequired = "Please enter your email"
@@ -89,7 +83,7 @@ form.addEventListener('submit', e => {
   
   let nameValid = hasValue(name, nameRequired);
   let emailValid = validateEmail(email, emailRequired, emailInvalid)
-  // let msgValid = validateMessage(form.elements['message'], messageInvalid)
+
 
   if (nameValid && emailValid) {
     alert("Thanks for testing. This is only a demo - no message has been sent.")
